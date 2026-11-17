@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>باستونا | منتجات مصنع باستونا للباستا الفاخرة</title>
+<meta name="description" content="منتجات مصنع باستونا للباستا الفاخرة في جدة — رافيولي وفوتشيني طازجة مجمدة، مع الأسعار وأرقام التواصل.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--red:#b3261e;--red-d:#8c1c16;--cream:#fbf6ee;--ink:#2a2420;--muted:#7a6f66;--line:#ece3d6;--gold:#d9a441;--card:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Tajawal',system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;padding-bottom:90px}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.bar{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 18px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:var(--red)}
+.brand img{height:42px}
+.hdr-call{display:flex;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:6px;border:0;border-radius:999px;padding:9px 16px;font:inherit;font-weight:700;cursor:pointer;font-size:14px}
+.btn-red{background:var(--red);color:#fff}.btn-red:hover{background:var(--red-d)}
+.btn-wa{background:#25d366;color:#fff}
+.btn-ghost{background:#fff;border:1.5px solid var(--line);color:var(--ink)}
+.hero{background:linear-gradient(135deg,var(--red) 0%,#7d1712 100%);color:#fff;text-align:center;padding:46px 18px 60px}
+.hero h1{font-size:clamp(26px,5vw,42px);font-weight:800}
+.hero p{opacity:.92;max-width:620px;margin:8px auto 0;font-size:17px}
+.badges{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.badges span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:5px 14px;border-radius:999px;font-size:14px}
+main{max-width:1150px;margin:-30px auto 0;padding:0 18px}
+.tools{background:#fff;border-radius:18px;box-shadow:0 6px 24px rgba(60,30,10,.08);padding:14px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tab{background:var(--cream);border:1.5px solid var(--line);border-radius:999px;padding:7px 16px;font:inherit;font-weight:700;cursor:pointer;color:var(--ink)}
+.tab.on{background:var(--red);border-color:var(--red);color:#fff}
+.search{flex:1;min-width:180px;border:1.5px solid var(--line);border-radius:999px;padding:9px 16px;font:inherit;background:var(--cream)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;margin:22px 0 40px}
+.card{background:var(--card);border-radius:18px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(60,30,10,.12)}
+.ph{aspect-ratio:1/1;background:#f3ebdf;position:relative;cursor:pointer}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.tag{position:absolute;top:10px;right:10px;background:#fff;color:var(--red);font-weight:800;font-size:12px;padding:3px 10px;border-radius:999px}
+.body{padding:14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.body h3{font-size:17px;font-weight:800;cursor:pointer}
+.meta{display:flex;gap:10px;color:var(--muted);font-size:13px;flex-wrap:wrap}
+.foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:8px}
+.price{font-size:22px;font-weight:800;color:var(--red)}.price small{font-size:13px;color:var(--muted);font-weight:500}
+.qty{display:flex;align-items:center;gap:6px}
+.qty button{width:32px;height:32px;border-radius:50%;border:1.5px solid var(--line);background:#fff;font-size:18px;font-weight:800;cursor:pointer;color:var(--red)}
+.qty b{min-width:18px;text-align:center}
+.add{background:var(--red);color:#fff;border:0;border-radius:999px;padding:8px 14px;font:inherit;font-weight:700;cursor:pointer}
+section.contact{background:#fff;border-radius:18px;border:1px solid var(--line);padding:24px;margin-bottom:30px}
+section.contact h2{color:var(--red);font-size:24px;margin-bottom:12px}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.citem{background:var(--cream);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.citem .lbl{color:var(--muted);font-size:13px}.citem .val{font-weight:800;font-size:18px;direction:ltr;text-align:right}
+.citem .acts{display:flex;gap:6px;flex-wrap:wrap}
+.social{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:10px 18px 20px}
+.note{font-size:13px;color:var(--muted);margin-top:4px}
+/* cart bar */
+.cartbar{position:fixed;bottom:14px;left:50%;transform:translateX(-50%) translateY(140%);transition:transform .25s;background:var(--ink);color:#fff;border-radius:999px;padding:10px 12px 10px 20px;display:flex;align-items:center;gap:14px;box-shadow:0 10px 30px rgba(0,0,0,.25);z-index:30;width:min(560px,calc(100% - 24px));justify-content:space-between}
+.cartbar.show{transform:translateX(-50%) translateY(0)}
+.cartbar .sum{font-weight:700}
+/* modal */
+.ov{position:fixed;inset:0;background:rgba(20,10,5,.55);display:none;align-items:flex-end;justify-content:center;z-index:40}
+.ov.show{display:flex}
+.sheet{background:#fff;width:min(620px,100%);max-height:92vh;overflow:auto;border-radius:22px 22px 0 0;padding:20px}
+@media(min-width:700px){.ov{align-items:center}.sheet{border-radius:22px}}
+.sheet h2{color:var(--red);font-size:22px;margin-bottom:6px}
+.close{float:left;background:var(--cream);border:0;width:34px;height:34px;border-radius:50%;font-size:18px;cursor:pointer}
+.sheet img{width:100%;border-radius:14px;margin:8px 0;aspect-ratio:4/3;object-fit:cover}
+.specs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}
+.specs div{background:var(--cream);border-radius:12px;padding:8px;text-align:center;font-size:13px}.specs b{display:block;font-size:15px}
+.steps{padding-right:18px;margin:6px 0 10px;font-size:14px}
+.line{display:flex;justify-content:space-between;align-items:center;border-bottom:1px dashed var(--line);padding:9px 0;gap:8px}
+.line .n{flex:1;font-weight:700}
+.field{width:100%;border:1.5px solid var(--line);border-radius:12px;padding:10px;font:inherit;margin-top:8px;background:var(--cream)}
+.total{display:flex;justify-content:space-between;font-size:20px;font-weight:800;margin:12px 0;color:var(--red)}
+.empty{text-align:center;color:var(--muted);padding:30px 0}
+</style>
+</head>
+<body>
+<header>
+<div class="bar">
+<a class="brand" href="#"><img src="https://pastona-ksa.com/wp-content/uploads/2026/07/logo-18.png" alt="باستونا" onerror="this.style.display='none'"><span>باستونا</span></a>
+<div class="hdr-call">
+<a class="btn btn-wa" id="hdrWa" target="_blank" rel="noopener">واتساب</a>
+<a class="btn btn-red" href="#contact">تواصل معنا</a>
+</div>
+</div>
+</header>
+<div class="hero">
+<h1>مصنع باستونا للباستا الفاخرة</h1>
+<p>رافيولي وفوتشيني طازجة مجمدة، مصنوعة من دقيق فاخر وسميد وبيض طازج — صناعة محلية في جدة بمعايير عالمية.</p>
+<div class="badges"><span>جاهزة خلال 3–5 دقائق</span><span>تُحفظ على ‎-18°م</span><span>توريد للفنادق والمطاعم والتموين</span></div>
+</div>
+<main>
+<div class="tools">
+<div class="tabs" id="tabs">
+<button class="tab on" data-c="all">الكل</button>
+<button class="tab" data-c="ravioli">رافيولي</button>
+<button class="tab" data-c="fettuccine">فوتشيني</button>
+</div>
+<input class="search" id="q" type="search" placeholder="ابحث عن منتج…">
+</div>
+<div class="grid" id="grid"></div>
+<section class="contact" id="contact">
+<h2>تواصل معنا</h2>
+<div class="cgrid" id="cgrid"></div>
+<div class="social">
+<a class="btn btn-ghost" href="https://www.instagram.com/pastona_ksa/" target="_blank" rel="noopener">Instagram</a>
+<a class="btn btn-ghost" href="https://www.tiktok.com/@pastonaksa" target="_blank" rel="noopener">TikTok</a>
+<a class="btn btn-ghost" href="https://www.snapchat.com/add/pastona-ksa" target="_blank" rel="noopener">Snapchat</a>
+<a class="btn btn-ghost" href="https://x.com/pastonaksa" target="_blank" rel="noopener">X</a>
+<a class="btn btn-ghost" href="https://pastona-ksa.com/" target="_blank" rel="noopener">الموقع الرسمي</a>
+</div>
+<p class="note">الموقع: المدينة الصناعية الثالثة — جدة، المملكة العربية السعودية</p>
+</section>
+</main>
+<footer>جميع الأسعار بالريال السعودي للعبوة وشاملة ضريبة القيمة المضافة 15٪ · للكميات والجملة تواصل معنا لعرض سعر خاص<br>© <span id="yr"></span> باستونا — مصنع باستونا للباستا الفاخرة</footer>
+<div class="cartbar" id="cartbar">
+<span class="sum" id="cartSum"></span>
+<button class="btn btn-red" id="openCart">عرض الطلب</button>
+</div>
+<div class="ov" id="ov"><div class="sheet" id="sheet"></div></div>
+<script>
+/* ===== عدّل البيانات من هنا ===== */
+const CONTACTS = [
+{ label: "جوال وواتساب المبيعات", phone: "0530922967" }
+];
+const EMAIL = "info@pastona-ksa.com";
+const WA_ORDER = CONTACTS[0].phone;          // الرقم الذي تصله طلبات الواتساب
+const IMG = "images/";
+const PRODUCTS = [
+{id:1, c:"ravioli", name:"رافيولي باللحم", img:"رافيولي_لحم.jpg", price:30, w:"300 جم", t:3, s:"2–3 أشخاص", d:"رافيولي طازجة محشوة باللحم البقري مع جبنة الموزاريلا."},
+{id:2, c:"ravioli", name:"رافيولي بالدجاج", img:"رافيولي_دجاج.jpg", price:27, w:"300 جم", t:5, s:"2–3 أشخاص", d:"رافيولي طازجة محشوة بصدر الدجاج مع جبنة الموزاريلا."},
+{id:3, c:"ravioli", name:"رافيولي بالجمبري", img:"رافيولي_جمبري.jpg", price:30, w:"300 جم", t:3, s:"2–3 أشخاص", d:"رافيولي طازجة محشوة بالجمبري مع جبنة الموزاريلا، بعجينة بنكهة ثمار البحر."},
+{id:4, c:"ravioli", name:"رافيولي بالسبانخ والريحان والأجبان", img:"رافيولي_سبانخ_وريحان_واجبان.jpg", price:27, w:"300 جم", t:3, s:"2–3 أشخاص", d:"عجينة بالسبانخ والريحان محشوة بتشكيلة من الأجبان الكريمية."},
+{id:5, c:"ravioli", name:"رافيولي بالأجبان", img:"رافيولي_أجبان.jpg", price:25, w:"300 جم", t:3, s:"2–3 أشخاص", d:"محشوة بتشكيلة من الأجبان الكريمية، بطعم غني يناسب أي صلصة."},
+{id:6, c:"fettuccine", name:"فوتشيني بالأجبان", img:"فوتتشيني_اجبان.jpg", price:14, w:"500 جم", t:3, s:"4–5 أشخاص", d:"شرائط فوتشيني معززة بالأجبان، مثالية مع صلصات الكريمة والجبن."},
+{id:7, c:"fettuccine", name:"فوتشيني بالمأكولات البحرية", img:"فوتتشيني_ثمار_البحر.jpg", price:14, w:"500 جم", t:3, s:"4–5 أشخاص", d:"فوتشيني بنكهة ثمار البحر، مثالية مع الجمبري والكاليماري."},
+{id:8, c:"fettuccine", name:"فوتشيني بالسبانخ والريحان والأجبان", img:"فوتتشيني_سبانخ_وريحان.jpg", price:14, w:"500 جم", t:3, s:"4–5 أشخاص", d:"فوتشيني خضراء بالسبانخ والريحان والأجبان."},
+{id:9, c:"fettuccine", name:"فوتشيني سادة", img:"فوتتشيني_سادة.jpg", price:10, w:"500 جم", t:3, s:"4–5 أشخاص", d:"فوتشيني كلاسيكية من دقيق فاخر وسميد وبيض طازج."},
+{id:10,c:"fettuccine", name:"فوتشيني بالقمح الكامل", img:"فوتتشيني_حبة_القمح_الكاملة.jpg", price:18, w:"500 جم", t:3, s:"4–5 أشخاص", d:"فوتشيني من القمح بالحبة الكاملة، خيار صحي وغني بالألياف."}
+];
+/* ================================ */
+const $ = s => document.querySelector(s);
+const intl = p => "966" + p.replace(/^0/, "");
+const cart = {};
+let cat = "all", query = "";
+function render(){
+const list = PRODUCTS.filter(p => (cat==="all"||p.c===cat) && p.name.includes(query));
+$("#grid").innerHTML = list.length ? list.map(p => `
+<div class="card">
+<div class="ph" onclick="showProduct(${p.id})">
+<img src="${IMG+encodeURIComponent(p.img)}" alt="${p.name}" loading="lazy">
+<span class="tag">${p.c==="ravioli"?"رافيولي":"فوتشيني"}</span>
+</div>
+<div class="body">
+<h3 onclick="showProduct(${p.id})">${p.name}</h3>
+<div class="meta"><span>⚖️ ${p.w}</span><span>⏱️ ${p.t} دقائق</span><span>👥 ${p.s}</span></div>
+<div class="foot">
+<div class="price">${p.price} <small>ر.س</small></div>
+${cart[p.id] ? `<div class="qty"><button onclick="chg(${p.id},1)">+</button><b>${cart[p.id]}</b><button onclick="chg(${p.id},-1)">−</button></div>`
+: `<button class="add" onclick="chg(${p.id},1)">أضف للطلب</button>`}
+</div>
+</div>
+</div>`).join("") : `<p class="empty">لا توجد منتجات مطابقة</p>`;
+updateBar();
+}
+function chg(id, d){
+cart[id] = Math.max(0, (cart[id]||0) + d);
+if(!cart[id]) delete cart[id];
+render();
+if($("#ov").classList.contains("show") && $("#sheet").dataset.v==="cart") showCart();
+}
+function totals(){
+let n=0, sum=0;
+for(const id in cart){ const p = PRODUCTS.find(x=>x.id==id); n+=cart[id]; sum+=cart[id]*p.price; }
+return {n, sum};
+}
+function updateBar(){
+const {n,sum} = totals();
+$("#cartSum").textContent = `${n} عبوة · ${sum} ر.س`;
+$("#cartbar").classList.toggle("show", n>0);
+}
+function openSheet(html, v){ $("#sheet").innerHTML = html; $("#sheet").dataset.v=v; $("#ov").classList.add("show"); }
+function closeSheet(){ $("#ov").classList.remove("show"); }
+$("#ov").addEventListener("click", e => { if(e.target.id==="ov") closeSheet(); });
+function showProduct(id){
+const p = PRODUCTS.find(x=>x.id===id);
+openSheet(`
+<button class="close" onclick="closeSheet()">✕</button>
+<h2>${p.name}</h2>
+<img src="${IMG+encodeURIComponent(p.img)}" alt="${p.name}">
+<p>${p.d}</p>
+<div class="specs"><div>الوزن<b>${p.w}</b></div><div>مدة الطهي<b>${p.t} دقائق</b></div><div>تكفي<b>${p.s}</b></div></div>
+<b>طريقة التحضير</b>
+<ol class="steps">
+<li>جهّز الصلصة أولاً.</li>
+<li>اغلِ الماء في قدر، وأضف المنتج مباشرة وهو مجمد دون إزالة الثلج.</li>
+<li>انتظر حتى يعود الماء للغليان، حرّك ببطء واحسب ${p.t} دقائق.</li>
+<li>صفِّ الباستا وأضفها إلى الصلصة على نار هادئة مع التقليب بلطف، ثم قدّمها.</li>
+</ol>
+<p class="note">طريقة الحفظ: مجمد على ‎-18°م</p>
+<div class="total"><span>السعر</span><span>${p.price} ر.س</span></div>
+<button class="btn btn-red" style="width:100%;justify-content:center" onclick="chg(${p.id},1);closeSheet()">أضف للطلب</button>`, "product");
+}
+function showCart(){
+const ids = Object.keys(cart);
+const {sum} = totals();
+openSheet(`
+<button class="close" onclick="closeSheet()">✕</button>
+<h2>طلبك</h2>
+${ids.length ? ids.map(id => { const p = PRODUCTS.find(x=>x.id==id); return `
+<div class="line"><span class="n">${p.name} <small style="color:var(--muted)">(${p.w})</small></span>
+<div class="qty"><button onclick="chg(${p.id},1)">+</button><b>${cart[id]}</b><button onclick="chg(${p.id},-1)">−</button></div>
+<b style="min-width:64px;text-align:left">${cart[id]*p.price} ر.س</b></div>`; }).join("") : `<p class="empty">السلة فارغة</p>`}
+<div class="total"><span>الإجمالي</span><span>${sum} ر.س</span></div>
+<input class="field" id="cName" placeholder="الاسم / اسم المنشأة">
+<input class="field" id="cLoc" placeholder="الحي / الموقع">
+<textarea class="field" id="cNote" rows="2" placeholder="ملاحظات (اختياري)"></textarea>
+<button class="btn btn-wa" style="width:100%;justify-content:center;margin-top:12px;padding:12px" onclick="sendOrder()">إرسال الطلب عبر واتساب</button>`, "cart");
+}
+$("#openCart").onclick = showCart;
+function sendOrder(){
+const {sum} = totals();
+if(!sum) return;
+let msg = "طلب جديد من صفحة منتجات باستونا\n\n";
+for(const id in cart){ const p = PRODUCTS.find(x=>x.id==id); msg += `• ${p.name} (${p.w}) × ${cart[id]} = ${cart[id]*p.price} ر.س\n`; }
+msg += `\nالإجمالي: ${sum} ر.س (شامل الضريبة)`;
+const n=$("#cName").value.trim(), l=$("#cLoc").value.trim(), t=$("#cNote").value.trim();
+if(n) msg += `\nالاسم: ${n}`; if(l) msg += `\nالموقع: ${l}`; if(t) msg += `\nملاحظات: ${t}`;
+window.open(`https://wa.me/${intl(WA_ORDER)}?text=${encodeURIComponent(msg)}`, "_blank");
+}
+document.querySelectorAll(".tab").forEach(b => b.onclick = () => {
+document.querySelectorAll(".tab").forEach(x=>x.classList.remove("on")); b.classList.add("on"); cat = b.dataset.c; render();
+});
+$("#q").oninput = e => { query = e.target.value.trim(); render(); };
+$("#hdrWa").href = `https://wa.me/${intl(WA_ORDER)}`;
+$("#cgrid").innerHTML = CONTACTS.map(c => `
+<div class="citem"><span class="lbl">${c.label}</span><span class="val">${c.phone}</span>
+<div class="acts"><a class="btn btn-red" href="tel:+${intl(c.phone)}">اتصال</a><a class="btn btn-wa" href="https://wa.me/${intl(c.phone)}" target="_blank" rel="noopener">واتساب</a></div></div>`).join("") + `
+<div class="citem"><span class="lbl">البريد الإلكتروني</span><span class="val" style="font-size:16px">${EMAIL}</span>
+<div class="acts"><a class="btn btn-red" href="mailto:${EMAIL}">مراسلة</a></div></div>`;
+$("#yr").textContent = new Date().getFullYear();
+render();
+</script>
+</body>
+</html>
